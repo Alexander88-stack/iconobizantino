@@ -23,7 +23,7 @@ module.exports = ( env, arg ) => {
 		module: {
 			rules: [
 				{
-					test: /\.tsx?$/,
+					test: /\.(tsx?|jsx?)$/,
 					loader: "ts-loader",
 				},
 				{
@@ -61,7 +61,7 @@ module.exports = ( env, arg ) => {
 			new HtmlWebpackPlugin({
 				template: 'src/index.html',
 				templateParameters: {
-					title: 'Project Name'
+					title: 'Iconos Bizantinos'
 				},
 				hash: true,
 			}),
