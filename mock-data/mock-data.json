@@ -1,0 +1,11 @@
+{
+	"Product": [
+		{ "id": "1", "__className": "Product", "name": "Producto 1", "img": "", "description": "Precioso cuadro", "stock": 10, "price": 3000000 },
+		{ "id": "2", "__className": "Product", "name": "Producto 2", "img": "", "description": "Precioso cuadro", "stock": 10, "price": 6000 },
+		{ "id": "3", "__className": "Product", "name": "Producto 3", "img": "", "description": "Precioso cuadro", "stock": 10, "price": 50000 },
+		{ "id": "4", "__className": "Product", "name": "Producto 4", "img": "", "description": "Precioso cuadro", "stock": 10, "price": 8000 }
+	],
+	"User": [
+		{ "id": "user1", "__className": "User", "name": "Josep" }
+	]
+}

@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import '../../css/styles.css'
+import { UserView } from "../../user/user-view";
 
 interface NavBarProps {
     onMenuClicked: ( menuId: number ) => void
@@ -11,17 +13,17 @@ export class NavBar extends Component<NavBarProps> {
 
     render() {
         return (
-           <div>
+           <div className="centreText">
                 <button onClick={ ()=>this.menuCliked( 0 )}>
-                    Homepage
+                    Iconografía
                 </button>
 
                 <button onClick={ ()=>this.menuCliked( 1 )}>
-                    Shop
+                    Tienda
                 </button>
 
                 <button onClick={ ()=>this.menuCliked( 2 )}>
-                    Contact
+                    Contacto
                 </button>
 
                 <button onClick={ ()=>this.menuCliked( 3 )}>
@@ -29,7 +31,11 @@ export class NavBar extends Component<NavBarProps> {
                 </button>
 
                 <button onClick={ ()=>this.menuCliked( 4 )}>
-                    Chart
+                    Carrito
+                </button>
+
+                <button onClick={ ()=>this.menuCliked( 5 )}>
+                    Users
                 </button>
             </div> 
         )

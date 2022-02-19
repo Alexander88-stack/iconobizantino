@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
+import { ContactUsForm } from './components/contact/contact'
+import { HomePage } from './components/home/home-page'
 import { NavBar } from './components/nav-bar/nav-bar'
+import './css/styles.css'
+import { ShopViewer } from './shop/shop-viewer'
+import { UserView } from './user/user-view'
 
 interface AppState {
 	activeComponent: JSX.Element
@@ -7,12 +12,17 @@ interface AppState {
 
 interface AppProps {}
 
+
+
 const components = [
-	<div>Home Page</div>,
-	<div>Shop</div>,
-	<div>Contact</div>,
-	<div>Glosario</div>,
-	<div>Chart</div>,
+	<HomePage />,
+	<ShopViewer/>,
+	<ContactUsForm />,
+	<div>
+			
+	</div>,
+	<div></div>,
+	<UserView/>
 ]
 
 export class App extends Component<AppProps, AppState> {
@@ -37,7 +47,9 @@ export class App extends Component<AppProps, AppState> {
 			<div className="app">
 				<NavBar onMenuClicked={ (menuId) => this.menuHasBeenClicked( menuId ) }/>
 				{ activeComponent }
+				
 			</div>
+			
 		)		
 	}
 }
